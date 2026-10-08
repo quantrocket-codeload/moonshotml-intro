@@ -1,4 +1,4 @@
-# Copyright 2020-2024 QuantRocket LLC - All Rights Reserved
+# Copyright 2020-2026 QuantRocket LLC - All Rights Reserved
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ class DemoMLStrategy(MoonshotML):
     FORWARD_RETURNS_WINDOW = 22
     TOP_N = 3 # number of positions to hold
     COMMISSION_CLASS = USStockCommission
-    REBALANCE_INTERVAL = "M" # M = monthly; see https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases
+    REBALANCE_INTERVAL = "ME" # ME = monthly; see https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases
 
     def prices_to_features(self, prices):
         """
